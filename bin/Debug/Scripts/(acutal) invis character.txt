@@ -1,0 +1,16 @@
+local player = game.Players.LocalPlayer -- Get the local player
+local character = player.Character or player.CharacterAdded:Wait() -- Get the player's character
+
+-- Hide all the parts of the character
+for _, part in ipairs(character:GetDescendants()) do
+    if part:IsA("BasePart") then
+        part.Transparency = 1
+        part.CanCollide = false
+    end
+end
+
+-- Hide the character's name and healthbar
+if character:FindFirstChild("Humanoid") then
+    character.Humanoid.NameDisplayDistance = math.huge
+    character.Humanoid.HealthDisplayDistance = math.huge
+end

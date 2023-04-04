@@ -1,0 +1,12 @@
+-- replace "playerName" with the name of the player you want to kick
+local playerName = "Player1"
+
+-- find the player's character
+local player = game:GetService("Players"):FindFirstChild(playerName)
+
+-- kick the player if they are in the game
+if player then
+    player:Kick("You have been kicked from the game.")
+else
+    print("Player not found.")
+end

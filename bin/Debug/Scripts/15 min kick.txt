@@ -1,0 +1,42 @@
+-- Create a ScreenGui to hold the button
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "KickButtonGui"
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+-- Create the button
+local button = Instance.new("TextButton")
+button.Text = "Click to Kick"
+button.Size = UDim2.new(0, 100, 0, 50)
+button.Position = UDim2.new(0, 0, 0, 0)
+button.Parent = screenGui
+
+-- Make the button draggable
+local dragInput = nil
+local dragStart = nil
+local startPos = nil
+
+button.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+        dragInput = input
+        startPos = button.Position
+        dragStart = input.Position
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragInput = nil
+            end
+        end)
+    end
+end)
+
+button.InputChanged:Connect(function(input)
+    if input == dragInput then
+        local delta = input.Position - dragStart
+        button.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    end
+end)
+
+-- Kick the player after 15 minutes when the button is clicked
+button.MouseButton1Click:Connect(function()
+    wait(900) -- Wait for 15 minutes (900 seconds)
+    game.Players.LocalPlayer:Kick("You have been kicked.")
+end)

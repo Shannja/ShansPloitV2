@@ -1,0 +1,15 @@
+C:\Users\Shan Matty\source\repos\ShansPloit V2\bin\Debug\ShansPloit v2.exe.config
+C:\Users\Shan Matty\source\repos\ShansPloit V2\bin\Debug\ShansPloit v2.exe
+C:\Users\Shan Matty\source\repos\ShansPloit V2\bin\Debug\ShansPloit v2.pdb
+C:\Users\Shan Matty\source\repos\ShansPloit V2\bin\Debug\FastColoredTextBox.dll
+C:\Users\Shan Matty\source\repos\ShansPloit V2\bin\Debug\WeAreDevs_API.dll
+C:\Users\Shan Matty\source\repos\ShansPloit V2\obj\Debug\ShansPloit_v2.ShansPloitV2.resources
+C:\Users\Shan Matty\source\repos\ShansPloit V2\obj\Debug\ShansPloit_v2.Options.resources
+C:\Users\Shan Matty\source\repos\ShansPloit V2\obj\Debug\ShansPloit_v2.Properties.Resources.resources
+C:\Users\Shan Matty\source\repos\ShansPloit V2\obj\Debug\ShansPloit V2.csproj.GenerateResource.cache
+C:\Users\Shan Matty\source\repos\ShansPloit V2\obj\Debug\ShansPloit V2.csproj.CoreCompileInputs.cache
+C:\Users\Shan Matty\source\repos\ShansPloit V2\obj\Debug\ShansPloit V2.csproj.CopyComplete
+C:\Users\Shan Matty\source\repos\ShansPloit V2\obj\Debug\ShansPloit v2.exe
+C:\Users\Shan Matty\source\repos\ShansPloit V2\obj\Debug\ShansPloit v2.pdb
+C:\Users\Shan Matty\source\repos\ShansPloit v2\obj\Debug\ShansPloit V2.csproj.AssemblyReference.cache
+C:\Users\Shan Matty\source\repos\ShansPloit v2\obj\Debug\ShansPloit V2.csproj.SuggestedBindingRedirects.cache

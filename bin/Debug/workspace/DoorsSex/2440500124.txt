@@ -1,0 +1,1 @@
+{"MobToggle":false,"KeyToggle":false,"HeartbeatWin":true,"PredictToggle":false,"NoSeek":false,"FigureToggle":false,"BookToggle":false,"AvoidRushToggle":true,"ScreechToggle":true,"InstantToggle":false}

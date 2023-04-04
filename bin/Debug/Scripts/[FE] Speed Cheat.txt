@@ -1,0 +1,32 @@
+--[[
+     Speed Cheat
+     By: @shany26M10 on roblox
+
+     Works for most games, most big games patch this.
+]]--
+
+local speed      = 70
+local playerName = "UsernameHere"
+
+local function setSpeedForPlayer(player)
+    local character = player.Character
+    if character then
+        local humanoid = character:FindFirstChild("Humanoid")
+        if humanoid then
+            humanoid.WalkSpeed = speed
+            humanoid.JumpPower = speed * 1.5
+        end
+    end
+end
+
+local function onPlayerAdded(player)
+    setSpeedForPlayer(player)
+end
+
+game:GetService("Players").PlayerAdded:Connect(onPlayerAdded)
+
+-- Example usage: set speed for a specific player
+local player = game:GetService("Players"):FindFirstChild(playerName)
+if player then
+    setSpeedForPlayer(player)
+end
