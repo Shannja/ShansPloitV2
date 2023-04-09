@@ -1,2 +1,2 @@
-# ShansPloit v2
-* e
+# ShansPloit V2
+* Added Auto-Updater
